@@ -1,0 +1,43 @@
+- Để có thể nhúng code Javascript vào trong file .html thì chúng ta có 2 cách:
+  + Cách 1: Tạo ra một cặp thẻ <script></script> đặt ở bên trên thẻ đóng của thẻ body
+    (Vì khi xây dựng trang web thì chúng ta sẽ ưu tiên việc hiển thị giao diện trước khi
+    chúng ta hiển thị dữ liệu)
+  + Cách 2: Tạo một file có đuôi .js bên ngoài, sau đấy sẽ dùng thẻ <script></script>
+  với thuộc tính "src" để liên kết giữa các file lại với nhau => Cách này giúp bảo trì
+  mã nguồn tốt hơn và code được được clean hơn
+
+- Cách khai báo biến
+  + Biến: là nơi lưu trữ giá trị
+  + Các cách khai báo biến: 
+    + Quy tắc đặt tên biến: 
+      - Tên biến phải là một danh từ
+      - Phải bằng tiếng anh
+      - Viết theo kiểu cammel case (con lạc đà): những biến nào có 2 từ trở lên thì từ đầu tiên viết thường
+      và chữ cái đầu của từ thứ 2 viết hoa
+      - Không chứa các ký tự đặc biệt như: %, ?, *,... trừ ký tự $, _
+      - Tên biến sẽ không bắt đầu bằng một số
+      - Tên biến phải có ý nghĩa
+    + Với từ khóa var:
+      + Có thể gán lại giá trị
+      + Có thể khai báo lại
+      + Có cơ chế hosting: Khi một file .js được chạy, trình biên dịch sẽ tìm xem trong file .js có biến nào
+        được khai báo với từ khóa var không? nếu có thì nó sẽ đưa câu lệnh khai báo đấy lên trên đầu. Lúc này
+        từ khóa var sẽ có phạm là instance (toàn cục)
+    + Với từ khóa let:
+      + Nó được ra mắt tại phiên bản ES6 (2015)
+      + Có thể gán lại được giá trị
+      + Không thể khai báo lại
+    + Từ khóa const (Hằng số)
+      + Không thể gán lại giá trị cho biến
+      + Không thể khai báo lại
+      + Nó sẽ không có ngữ cảnh (từ khóa this)
+
+
+- Các kiểu dữ liệu trong JS
+  + Kiểu chuỗi (string)
+  + Kiểu số (number)
+  + Kiểu đúng/sai (boolean)
+  + Kiểu Chưa xác định (undefiend)
+  + Kiểu trống rỗng (null)
+  + Kiểu NaN (Not a Number)
+  + Symbal
